@@ -1,0 +1,282 @@
+
+<form >
+<div>
+    <input type="number" name="number" [(ngModel)]="number1">
+    <input type="number" name="number" [(ngModel)]="number2">
+
+    <button type="submit" (click)="onCalculator()">submit</button>
+    <button type="reset">RESET</button>
+    <p>{{number3}}</p>
+  
+    <div>
+        <input type="radio" value="addition" name="addition" [(ngModel)]="addition">addition
+    </div>
+
+    <div>
+        <input type="radio" value="substraction" name="substraction"  [(ngModel)]="substraction">substraction
+    </div>
+
+    <div>
+        <input type="radio" value="multiplication"name="multiplication" [(ngModel)]="multiplication">multiplication
+    </div>
+
+    <div>
+        <input type="radio" value="divide" name="divide" [(ngModel)]="divide">division
+    </div>
+
+</div>
+</form>
+
+<!-- wavity app -- start-->
+
+<div class="container">
+    <div class="row">
+        <div class="col md-4">
+            <ul *ngFor="let x of array">
+                <input type="checkbox" id="x" name="x" [(ngModel)]="x.checked"
+                value="{{x.value}}" (change)="onChange1(x.name)" >
+               <p>{{x.name}}</p> 
+            </ul>
+        </div>
+        <div class="col md-4">
+            <button class="btn btn-primary"  >ADD</button>
+        </div>
+
+        <div class="col md-4">
+            <ul *ngFor="let xx of array1">
+                <input type="checkbox" id="xx" name="xx" [(ngModel)]="xx.checked"
+                value="{{xx.value}}" >
+               <p>{{xx|json}}</p> 
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div>
+        <div class="col md-6">
+            <button class="btn btn-primary" (click)="add()" >ADDS</button>
+        </div>
+        <div class="col md-6" *ngIf="isAdd,isAdd1">
+            <p>hkjhjhjkkhhkj</p>
+            <p>hkjhjhjkkhhkj</p>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<!-- abhi form task --start -->
+<div class="container">
+    <div class="row"> 
+       <div class="col-sm">    
+    <div class="custom-background">
+    <form>
+    <div class="col-sm custom-heading">
+        <h1>Create/Reset Login Password</h1>
+    </div>
+    <div class="col-sm custom-border">
+    </div>
+    <div>
+    <div class="col-sm">
+        <label for="User ID">User ID<span>*</span></label>
+        <input type="text" id="User ID" placeholder="Enter your ID" class="custom-inputs">
+    </div>
+    
+</div>
+    <div class="col-sm">
+        <label for="Date">Date of Birth/<div>Date of Incorporation<span>*</span></div></label>
+        <input type="date" id="Date" placeholder="Date of Birth" class="custom-inputs1">
+        <p>(DD/MM/YYYY)<span>*</span></p>
+    </div>
+
+    <div class="col-sm">
+        <label for="Iam">I am a:<span>*</span></label>
+        <input type="radio" id="Iam" class="custom-inputs2">Retail User<span>*</span>
+        <input type="radio" id="Iam" class="custom-inputs3">Corporate User<span>*</span>
+    </div>
+
+    <div class="col-sm">
+        <label for="Reset">Reset My Account Using<span>*</span></label>
+        <input type="text" id="Reset" class="custom-inputs4">
+    </div>
+
+    <div class="col-sm">
+        <label for="Account">Account Number<span>*</span></label>
+        <input type="text" id="Account" placeholder="Enter Your Account Number" class="custom-inputs5">
+    </div>
+
+    <div class="col-sm">
+        <label for="New Password">New Password<span>*</span></label>
+        <input type="text" id="New Password" placeholder="Enter Your New Password" class="custom-inputs6">
+        <p>(Minimum 8 char)</p>
+    </div>
+
+    <div class="col-sm">
+        <label for="Confirm">Confirm Password<span>*</span></label>
+        <input type="text" id="Confirm" placeholder="Confirm Password" class="custom-inputs7">
+        <p>(Minimum 8 char)</p>
+    </div>
+
+    <div class="col-sm">
+        <button class="btn btn-primary">Clear</button>
+        <button class="btn btn-primary">Submit</button>
+    </div>
+    
+    </form>
+</div>
+</div> 
+</div> 
+</div>
+
+
+
+<!-- abhi form task --end -->
+
+<!-- input password--start--show -->
+
+
+<input [type]="show ? 'text' : 'password'" />
+
+<input type="checkbox" (click)="password()"><span>{{show ? 'Show' : 'Hide'}}</span>
+
+
+<!-- input password--end--show -->
+
+<!-- responsive--start -->
+
+
+
+<!-- responsive--end -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <h1>saiteja</h1>
+            <p>vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm, 
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h1>marripelly</h1>
+            <p>vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,</p>
+        </div>
+        <div class="col-md-3">
+            <h1>Mi</h1>
+            <p>vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,</p>
+        </div>
+        <div class="col-md-3">
+            <h1>Hello</h1>
+            <p>vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,
+                vcmn,vbnm,vbnm,.bnm,.bnm,bnm,bnm,bvnm,bnm,bnm,bnm,</p>
+        </div>
+
+    </div>
+</div>
+<!-- searching--start -->
+
+
+
+<!-- searching--end -->
+
+<!-- <div >
+    
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Country</th>
+            <th>Pincode</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Mobile No</th>
+        </tr>
+
+        <tr *ngFor="let x of getArray">
+            <td>{{x.firstName}}</td>
+            <td>{{x.lastName}}</td>
+            <td>{{x.country}}</td>
+            <td>{{x.pincode}}</td>
+            <td>{{x.address}}</td>
+            <td>{{x.email}}</td>
+            <td>{{x.mobileNo}}</td>
+
+        </tr>
+
+    </table>
+</div> -->
+
+
+ <div class="container">
+     <div *ngFor="let x of helloArray">
+     <div class="form-group">
+     <label for="firstname">FirstName</label>
+     <input type="text" id="firstname" class="form-control" [(ngModel)]="ss.firstname" name="firstname">
+     <p>{{ss.firstname}}</p>
+    </div>
+    <div class="form-group">
+        <label for="lastname">LastName</label>
+        <input type="text" id="lastname" class="form-control" [(ngModel)]="ss.lastname" name="lastname">
+        <p>{{ss.lastname}}</p>
+ </div>
+ <div class="form-group">
+    <label for="dob">Dob</label>
+    <input type="text" id="dob" class="form-control" [(ngModel)]="ss.dob" name="dob">
+    <p>{{ss.dob}}</p>
+</div>
+     </div>
+     <div>
+        <button class="btn btn-primary text-uppercase" (click)="onAdd()">add</button>
+        <button class="btn btn-success text-uppercase" (click)="onSave()">save</button>
+    </div>
+    
+ </div>
+
+
+<a href="https://www.google.com/">anchor tag</a>
+
+
+  <div class="container">
+      <table class="table table-bordered table-striped">
+          <tr>
+              <input
+              class="form-check-input"
+              type="checkbox"
+              [(ngModel)]="parentSelector"
+              [value]="-1"
+              (change)="onChangeFood($event)"
+            />
+            <th>FOOD</th>
+          </tr>
+          <tr *ngFor="let n of food">
+              <input type="checkbox" class="form-check-input"
+              [value]="n.id"
+              [checked]="n.select"
+              (change)="onChangeFood($event)">
+              <td>{{n.name}}</td>
+          </tr>
+      </table>
+
+  </div>  

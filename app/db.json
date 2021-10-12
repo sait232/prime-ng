@@ -1,0 +1,59 @@
+{
+  "Bio-Data": [
+    {
+      "firstName": "saiteja",
+      "lastName": "Marripelly",
+      "country": "india",
+      "pincode":505301,
+      "address":"sircilla",
+      "email":"marripellysaiteja@gmail.com",
+      "mobileNo":8497953887
+    },
+    {
+      "firstName": "saikumar",
+      "lastName": "Mankala",
+      "country": "india",
+      "pincode":505301,
+      "address":"sircilla",
+      "email":"mankalasaikumar@gmail.com",
+      "mobileNo":8885190500
+    },
+    {
+      "firstName": "vemula",
+      "lastName": "harsha vardhan",
+      "country": "india",
+      "pincode":505301,
+      "address":"sircilla",
+      "email":"vhvardhan@gmail.com",
+      "mobileNo":9966435544
+    },
+    {
+      "firstName": "murali",
+      "lastName": "gajjela",
+      "country": "india",
+      "pincode":505301,
+      "address":"sircilla",
+      "email":"gajjelamurali@gmail.com",
+      "mobileNo":7569844828
+    },
+    {
+      "firstName": "srujan",
+      "lastName": "ranga",
+      "country": "india",
+      "pincode":505301,
+      "address":"sircilla",
+      "email":"srujanranga@gmail.com",
+      "mobileNo":7981596775
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
